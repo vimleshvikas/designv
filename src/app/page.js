@@ -451,7 +451,7 @@ export default function Home() {
         </div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1 className="hero-title" id="hero-main-title">Crafting Timeless <span class="highlight-gold">Luxury</span> Interiors</h1>
+          <h1 className="hero-title" id="hero-main-title">Crafting Timeless <span className="highlight-gold">Luxury</span> Interiors</h1>
           <div className="hero-btns">
             <a href="#portfolio" className="btn btn-primary">Explore Portfolio</a>
             <a href="#booking" className="btn btn-outline">Book Consultation</a>
@@ -469,7 +469,7 @@ export default function Home() {
       {/* ==========================================
            2. ABOUT STUDIO
            ========================================== */}
-      <section id="about" class="about">
+      <section id="about" className="about">
         <div className="container">
           <div className="about-grid">
             
@@ -541,7 +541,7 @@ export default function Home() {
               <div className="service-icon"><i className="fa-solid fa-kitchen-set"></i></div>
               <h3>Modular Kitchens</h3>
               <p>State-of-the-art kitchens featuring soft-close luxury hardware, custom built-in appliances, gorgeous quartz island counters, and high-gloss textures.</p>
-              <a href="#booking" class="service-link">Inquire <i className="fa-solid fa-arrow-right"></i></a>
+              <a href="#booking" className="service-link">Inquire <i className="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <div className="service-card glass-panel reveal-item" id="service-furniture">
@@ -833,7 +833,7 @@ export default function Home() {
                   className={`testimonial-slide ${testimonialIndex === idx ? "active" : ""}`}
                 >
                   <div className="quote-icon"><i className="fa-solid fa-quote-right"></i></div>
-                  <p className="testimonial-text">"{testimonial.text}"</p>
+                  <p className="testimonial-text">&ldquo;{testimonial.text}&rdquo;</p>
                   <div className="testimonial-author">
                     <div className="author-rating">
                       <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
@@ -874,8 +874,8 @@ export default function Home() {
               <div className="instagram-overlay">
                 <div className="instagram-icon"><i className="fa-brands fa-instagram"></i></div>
                 <div className="instagram-stats">
-                  <span><i class="fa-solid fa-heart"></i> 412</span>
-                  <span><i class="fa-solid fa-comment"></i> 24</span>
+                  <span><i className="fa-solid fa-heart"></i> 412</span>
+                  <span><i className="fa-solid fa-comment"></i> 24</span>
                 </div>
               </div>
             </a>
@@ -885,8 +885,8 @@ export default function Home() {
               <div className="instagram-overlay">
                 <div className="instagram-icon"><i className="fa-brands fa-instagram"></i></div>
                 <div className="instagram-stats">
-                  <span><i class="fa-solid fa-heart"></i> 328</span>
-                  <span><i class="fa-solid fa-comment"></i> 18</span>
+                  <span><i className="fa-solid fa-heart"></i> 328</span>
+                  <span><i className="fa-solid fa-comment"></i> 18</span>
                 </div>
               </div>
             </a>
@@ -896,8 +896,8 @@ export default function Home() {
               <div className="instagram-overlay">
                 <div className="instagram-icon"><i className="fa-brands fa-instagram"></i></div>
                 <div className="instagram-stats">
-                  <span><i class="fa-solid fa-heart"></i> 580</span>
-                  <span><i class="fa-solid fa-comment"></i> 35</span>
+                  <span><i className="fa-solid fa-heart"></i> 580</span>
+                  <span><i className="fa-solid fa-comment"></i> 35</span>
                 </div>
               </div>
             </a>
@@ -907,8 +907,8 @@ export default function Home() {
               <div className="instagram-overlay">
                 <div className="instagram-icon"><i className="fa-brands fa-instagram"></i></div>
                 <div className="instagram-stats">
-                  <span><i class="fa-solid fa-heart"></i> 291</span>
-                  <span><i class="fa-solid fa-comment"></i> 12</span>
+                  <span><i className="fa-solid fa-heart"></i> 291</span>
+                  <span><i className="fa-solid fa-comment"></i> 12</span>
                 </div>
               </div>
             </a>
@@ -1061,7 +1061,7 @@ export default function Home() {
           <div className="contact-grid">
             
             <div className="contact-info reveal-item">
-              <h3 className="contact-info-title">Let's Create Your <span class="highlight-gold">Dream Space</span></h3>
+              <h3 className="contact-info-title">Let&apos;s Create Your <span className="highlight-gold">Dream Space</span></h3>
               <p style={{ color: "var(--text-secondary)", fontWeight: 300 }}>We welcome visitors to our architectural studio space. Schedule an appointment or walk in during business hours to view material samples and discuss layout schematics.</p>
               
               <div className="contact-details">
@@ -1270,7 +1270,7 @@ export default function Home() {
 
                   {project.feedbackText && (
                     <div className="modal-feedback glass-panel">
-                      <p>"{project.feedbackText}"</p>
+                      <p>&ldquo;{project.feedbackText}&rdquo;</p>
                       <div className="modal-feedback-author">{project.feedbackAuthor}</div>
                     </div>
                   )}
